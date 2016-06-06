@@ -1,0 +1,32 @@
+[06-Jun-2016 15:20:59 UTC] PHP Fatal error:  Call to undefined function bcrypt() in /home/shigeru/test/lumen-sample/database/seeds/DatabaseSeeder.php on line 19
+[06-Jun-2016 15:20:59 UTC] PHP Stack trace:
+[06-Jun-2016 15:20:59 UTC] PHP   1. {main}() /home/shigeru/test/lumen-sample/artisan:0
+[06-Jun-2016 15:20:59 UTC] PHP   2. Laravel\Lumen\Console\Kernel->handle() /home/shigeru/test/lumen-sample/artisan:35
+[06-Jun-2016 15:20:59 UTC] PHP   3. Symfony\Component\Console\Application->run() /home/shigeru/test/lumen-sample/vendor/laravel/lumen-framework/src/Console/Kernel.php:69
+[06-Jun-2016 15:20:59 UTC] PHP   4. Symfony\Component\Console\Application->doRun() /home/shigeru/test/lumen-sample/vendor/symfony/console/Application.php:117
+[06-Jun-2016 15:20:59 UTC] PHP   5. Symfony\Component\Console\Application->doRunCommand() /home/shigeru/test/lumen-sample/vendor/symfony/console/Application.php:186
+[06-Jun-2016 15:20:59 UTC] PHP   6. Illuminate\Console\Command->run() /home/shigeru/test/lumen-sample/vendor/symfony/console/Application.php:791
+[06-Jun-2016 15:20:59 UTC] PHP   7. Symfony\Component\Console\Command\Command->run() /home/shigeru/test/lumen-sample/vendor/illuminate/console/Command.php:155
+[06-Jun-2016 15:20:59 UTC] PHP   8. Illuminate\Console\Command->execute() /home/shigeru/test/lumen-sample/vendor/symfony/console/Command/Command.php:256
+[06-Jun-2016 15:20:59 UTC] PHP   9. Illuminate\Container\Container->call() /home/shigeru/test/lumen-sample/vendor/illuminate/console/Command.php:169
+[06-Jun-2016 15:20:59 UTC] PHP  10. call_user_func_array:{/home/shigeru/test/lumen-sample/vendor/illuminate/container/Container.php:507}() /home/shigeru/test/lumen-sample/vendor/illuminate/container/Container.php:507
+[06-Jun-2016 15:20:59 UTC] PHP  11. Illuminate\Database\Console\Seeds\SeedCommand->fire() /home/shigeru/test/lumen-sample/vendor/illuminate/container/Container.php:507
+[06-Jun-2016 15:20:59 UTC] PHP  12. Illuminate\Database\Eloquent\Model::unguarded() /home/shigeru/test/lumen-sample/vendor/illuminate/database/Console/Seeds/SeedCommand.php:64
+[06-Jun-2016 15:20:59 UTC] PHP  13. Illuminate\Database\Console\Seeds\SeedCommand->Illuminate\Database\Console\Seeds\{closure}() /home/shigeru/test/lumen-sample/vendor/illuminate/database/Eloquent/Model.php:2286
+[06-Jun-2016 15:20:59 UTC] PHP  14. DatabaseSeeder->run() /home/shigeru/test/lumen-sample/vendor/illuminate/database/Console/Seeds/SeedCommand.php:63
+[06-Jun-2016 15:23:17 UTC] PHP Fatal error:  Class 'Hash' not found in /home/shigeru/test/lumen-sample/database/seeds/DatabaseSeeder.php on line 19
+[06-Jun-2016 15:23:17 UTC] PHP Stack trace:
+[06-Jun-2016 15:23:17 UTC] PHP   1. {main}() /home/shigeru/test/lumen-sample/artisan:0
+[06-Jun-2016 15:23:17 UTC] PHP   2. Laravel\Lumen\Console\Kernel->handle() /home/shigeru/test/lumen-sample/artisan:35
+[06-Jun-2016 15:23:17 UTC] PHP   3. Symfony\Component\Console\Application->run() /home/shigeru/test/lumen-sample/vendor/laravel/lumen-framework/src/Console/Kernel.php:69
+[06-Jun-2016 15:23:17 UTC] PHP   4. Symfony\Component\Console\Application->doRun() /home/shigeru/test/lumen-sample/vendor/symfony/console/Application.php:117
+[06-Jun-2016 15:23:17 UTC] PHP   5. Symfony\Component\Console\Application->doRunCommand() /home/shigeru/test/lumen-sample/vendor/symfony/console/Application.php:186
+[06-Jun-2016 15:23:17 UTC] PHP   6. Illuminate\Console\Command->run() /home/shigeru/test/lumen-sample/vendor/symfony/console/Application.php:791
+[06-Jun-2016 15:23:17 UTC] PHP   7. Symfony\Component\Console\Command\Command->run() /home/shigeru/test/lumen-sample/vendor/illuminate/console/Command.php:155
+[06-Jun-2016 15:23:17 UTC] PHP   8. Illuminate\Console\Command->execute() /home/shigeru/test/lumen-sample/vendor/symfony/console/Command/Command.php:256
+[06-Jun-2016 15:23:17 UTC] PHP   9. Illuminate\Container\Container->call() /home/shigeru/test/lumen-sample/vendor/illuminate/console/Command.php:169
+[06-Jun-2016 15:23:17 UTC] PHP  10. call_user_func_array:{/home/shigeru/test/lumen-sample/vendor/illuminate/container/Container.php:507}() /home/shigeru/test/lumen-sample/vendor/illuminate/container/Container.php:507
+[06-Jun-2016 15:23:17 UTC] PHP  11. Illuminate\Database\Console\Seeds\SeedCommand->fire() /home/shigeru/test/lumen-sample/vendor/illuminate/container/Container.php:507
+[06-Jun-2016 15:23:17 UTC] PHP  12. Illuminate\Database\Eloquent\Model::unguarded() /home/shigeru/test/lumen-sample/vendor/illuminate/database/Console/Seeds/SeedCommand.php:64
+[06-Jun-2016 15:23:17 UTC] PHP  13. Illuminate\Database\Console\Seeds\SeedCommand->Illuminate\Database\Console\Seeds\{closure}() /home/shigeru/test/lumen-sample/vendor/illuminate/database/Eloquent/Model.php:2286
+[06-Jun-2016 15:23:17 UTC] PHP  14. DatabaseSeeder->run() /home/shigeru/test/lumen-sample/vendor/illuminate/database/Console/Seeds/SeedCommand.php:63

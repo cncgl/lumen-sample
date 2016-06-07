@@ -2,22 +2,28 @@
 lumen による SPA sample
 
 ## Prepare Database
-Create Database ``lumen_sample`` and user ``lumen_sample`` with password ``lumen_sample``
+- Clone this repo
+
+- Create Database ``lumen_sample`` and user ``lumen_sample`` with password ``lumen_sample``
+
+```
+$ cp .env.example .env
+```
 
 ## Install
-Create a secret code
+- Create a secret code
 ```
 $ ./artisan jwt:secret
 ```
-Create a migration table
+- Create a migration table
 ```
 $ ./artisan migrate:install
 ```
-Create tables
+- Create tables
 ```
 $ ./artisan migrate
 ```
-Create user data
+- Create user data
 ```
 $ ./artisan db:seed
 ```

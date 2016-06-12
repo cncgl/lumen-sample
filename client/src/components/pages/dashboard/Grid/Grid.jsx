@@ -1,4 +1,4 @@
-import React, { PropTypes, Component } from 'react';
+import React from 'react';
 import {Panel, PageHeader} from 'react-bootstrap';
 
 var Grid = React.createClass({
@@ -248,7 +248,6 @@ var Grid = React.createClass({
 
         <div className="row">
           <div className="col-lg-12">
-
             <Panel>
               <h3 id="grid-nesting">Nesting columns</h3>
               <p>To nest your content with the default grid, add a new
@@ -269,13 +268,11 @@ var Grid = React.createClass({
                 </div>
               </div>
             </Panel>
-
           </div>
         </div>
 
         <div className="row">
           <div className="col-lg-12">
-
             <Panel>
               <h3 id="grid-column-ordering">Column ordering</h3>
               <p>Easily change the order of our built-in grid columns with
@@ -286,15 +283,11 @@ var Grid = React.createClass({
                 <div className="col-md-3 col-md-pull-9">.col-md-3 .col-md-pull-9</div>
               </div>
             </Panel>
-              
           </div>
         </div>
-
       </div>
-      
     );
   }
-
 });
 
 export default Grid;

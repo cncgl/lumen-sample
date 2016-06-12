@@ -9,7 +9,7 @@ var StatWidget = React.createClass({
 
           header={<div className="row">
                     <div className="col-xs-3">
-                      <i className={this.props.icon}></i>
+                      <i className={this.props.icon} />
                     </div>
                     <div className="col-xs-9 text-right">
                       <div className="huge">{this.props.count}</div>
@@ -19,7 +19,7 @@ var StatWidget = React.createClass({
 
           footer={<Link to={this.props.linkTo}>
                     <span className="pull-left">{this.props.footerText}</span>
-                    <span className="pull-right"><i className="fa fa-arrow-circle-right"></i></span>
+                    <span className="pull-right"><i className="fa fa-arrow-circle-right" /></span>
                     <div className="clearfix"></div>
                   </Link>}
           >

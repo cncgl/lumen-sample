@@ -1,4 +1,4 @@
-import React, { PropTypes, Component } from 'react';
+import React from 'react';
 import {Panel, PageHeader} from 'react-bootstrap';
 
 var Typography = React.createClass({

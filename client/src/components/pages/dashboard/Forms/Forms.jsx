@@ -1,4 +1,4 @@
-import React, { PropTypes, Component } from 'react';
+import React from 'react';
 import {Panel, Button, Input, Label, FormControls, Row, Col, PageHeader} from 'react-bootstrap';
 
 var Forms = React.createClass({
@@ -6,18 +6,14 @@ var Forms = React.createClass({
   render: function() {
     
     return (
-
       <div>
-
         <div className="row">
           <div className="col-lg-12">
             <PageHeader>Forms</PageHeader>
           </div>
         </div>
-
         <div className="row">
           <div className="col-lg-12">
-
             <Panel header={<span>Basic Form Elements</span>} >
               <div className="row">
                 <div className="col-lg-6">
@@ -106,20 +102,17 @@ var Forms = React.createClass({
                   <form>
                     <Input type="text" addonBefore="@" placeholder="Username" />
                     <Input type="text" addonAfter=".00" />
-                    <Input type="text" addonBefore=<i className="fa fa-eur"></i> placeholder="Font Awesome Icon" />
+                    <Input type="text" addonBefore={<i className="fa fa-eur" />} placeholder="Font Awesome Icon" />
                     <Input type="text" addonBefore="$" addonAfter=".00" />
-                    <Input type="text" buttonAfter= <Button><i className="fa fa-search"></i></Button> />
+                    <Input type="text" buttonAfter={<Button><i className="fa fa-search" /></Button>} />
                   </form>
                 </div>
               </div>
             </Panel>
           </div>
         </div>
-      </div>
-      
-    );
+      </div>);
   }
-
 });
 
 export default Forms;

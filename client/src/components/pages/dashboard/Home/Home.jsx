@@ -1,14 +1,14 @@
-import React, { PropTypes, Component } from 'react';
-import {NavDropdown, MenuItem, DropdownButton, Navbar, Nav, NavItem, Panel, PageHeader, ListGroup, ListGroupItem, Button} from "react-bootstrap";
+import React from 'react';
+//import {NavDropdown, MenuItem, DropdownButton, Navbar, Nav, NavItem, Panel, PageHeader, ListGroup, ListGroupItem, Button} from "react-bootstrap";
+import {MenuItem, DropdownButton, Panel, PageHeader, ListGroup, ListGroupItem, Button} from "react-bootstrap";
 
-import StatWidget from "../../../common/StatWidget.js";
+import StatWidget from "../../../common/StatWidget.jsx";
 
 var Home = React.createClass({
 
   render: function() {
     return (
       <div>
-
         <div className="row">
           <div className="col-lg-12">
             <PageHeader>Dashboard</PageHeader>
@@ -54,16 +54,16 @@ var Home = React.createClass({
           <div className="col-lg-8">
 
             <Panel header={<span>
-              <i className="fa fa-bar-chart-o fa-fw"></i> Area Chart Example
-                  <div className="pull-right">
-                      <DropdownButton title="Dropdown" bsSize="xs" pullRight>
-                        <MenuItem eventKey="1">Action</MenuItem>
-                        <MenuItem eventKey="2">Another action</MenuItem>
-                        <MenuItem eventKey="3">Something else here</MenuItem>
-                        <MenuItem divider />
-                        <MenuItem eventKey="4">Separated link</MenuItem>
-                      </DropdownButton>
-                  </div>
+              <i className="fa fa-bar-chart-o fa-fw" /> Area Chart Example
+                <div className="pull-right">
+                  <DropdownButton title="Dropdown" bsSize="xs" id="dropdown-basic-1" pullRight>
+                    <MenuItem eventKey="1">Action</MenuItem>
+                    <MenuItem eventKey="2">Another action</MenuItem>
+                    <MenuItem eventKey="3">Something else here</MenuItem>
+                    <MenuItem divider />
+                    <MenuItem eventKey="4">Separated link</MenuItem>
+                  </DropdownButton>
+                </div>
               </span>}
             >
               <div>
@@ -73,16 +73,16 @@ var Home = React.createClass({
             </Panel>
 
             <Panel header={<span>
-              <i className="fa fa-bar-chart-o fa-fw"></i> Bar Chart Example
-                  <div className="pull-right">
-                      <DropdownButton title="Dropdown" bsSize="xs" pullRight>
-                        <MenuItem eventKey="1">Action</MenuItem>
-                        <MenuItem eventKey="2">Another action</MenuItem>
-                        <MenuItem eventKey="3">Something else here</MenuItem>
-                        <MenuItem divider />
-                        <MenuItem eventKey="4">Separated link</MenuItem>
-                      </DropdownButton>
-                  </div>
+              <i className="fa fa-bar-chart-o fa-fw" /> Bar Chart Example
+                <div className="pull-right">
+                  <DropdownButton title="Dropdown" bsSize="xs" id="dropdown-basic-2" pullRight>
+                    <MenuItem eventKey="1">Action</MenuItem>
+                    <MenuItem eventKey="2">Another action</MenuItem>
+                    <MenuItem eventKey="3">Something else here</MenuItem>
+                    <MenuItem divider />
+                    <MenuItem eventKey="4">Separated link</MenuItem>
+                  </DropdownButton>
+                </div>
               </span>}
             >
               <div>
@@ -91,7 +91,7 @@ var Home = React.createClass({
             </Panel>
 
             <Panel header={<span>
-              <i className="fa fa-clock-o fa-fw"></i> Responsive Timeline
+              <i className="fa fa-clock-o fa-fw" /> Responsive Timeline
               </span>} 
             >
               <div>
@@ -104,43 +104,43 @@ var Home = React.createClass({
           <div className="col-lg-4">
 
             <Panel header={<span>
-              <i className="fa fa-bell fa-fw"></i> Notifications Panel
+              <i className="fa fa-bell fa-fw" /> Notifications Panel
               </span>} 
             >
               <ListGroup>
-                <ListGroupItem href="javascript:void(0)"><i className="fa fa-comment fa-fw"></i> New Comment
+                <ListGroupItem href="javascript:void(0)"><i className="fa fa-comment fa-fw" /> New Comment
                   <span className="pull-right text-muted small"><em>4 minutes ago</em></span>
                 </ListGroupItem>
                 <ListGroupItem href="javascript:void(0)">
-                  <i className="fa fa-twitter fa-fw"></i> 3 New Followers
+                  <i className="fa fa-twitter fa-fw" /> 3 New Followers
                   <span className="pull-right text-muted small"><em>12 minutes ago</em></span>
                 </ListGroupItem>
                 <ListGroupItem href="javascript:void(0)">
-                  <i className="fa fa-envelope fa-fw"></i> Message Sent
+                  <i className="fa fa-envelope fa-fw" /> Message Sent
                   <span className="pull-right text-muted small"><em>27 minutes ago</em></span>
                 </ListGroupItem>
                 <ListGroupItem href="javascript:void(0)">
-                  <i className="fa fa-tasks fa-fw"></i> New Task
+                  <i className="fa fa-tasks fa-fw" /> New Task
                   <span className="pull-right text-muted small"><em>43 minutes ago</em></span>
                 </ListGroupItem>
                 <ListGroupItem href="javascript:void(0)">
-                  <i className="fa fa-upload fa-fw"></i> Server Rebooted
+                  <i className="fa fa-upload fa-fw" /> Server Rebooted
                   <span className="pull-right text-muted small"><em>11:32 AM</em></span>
                 </ListGroupItem>
                 <ListGroupItem href="javascript:void(0)">
-                  <i className="fa fa-bolt fa-fw"></i> Server Crashed!
+                  <i className="fa fa-bolt fa-fw" /> Server Crashed!
                   <span className="pull-right text-muted small"><em>11:13 AM</em></span>
                 </ListGroupItem>
                 <ListGroupItem href="javascript:void(0)">
-                  <i className="fa fa-warning fa-fw"></i> Server Not Responding
+                  <i className="fa fa-warning fa-fw" /> Server Not Responding
                   <span className="pull-right text-muted small"><em>10:57 AM</em></span>
                 </ListGroupItem>
                 <ListGroupItem href="javascript:void(0)">
-                  <i className="fa fa-shopping-cart fa-fw"></i> New Order Placed
+                  <i className="fa fa-shopping-cart fa-fw" /> New Order Placed
                   <span className="pull-right text-muted small"><em>9:49 AM</em></span>
                 </ListGroupItem>
                 <ListGroupItem href="javascript:void(0)">
-                  <i className="fa fa-money fa-fw"></i> Payment Received
+                  <i className="fa fa-money fa-fw" /> Payment Received
                   <span className="pull-right text-muted small"><em>Yesterday</em></span>
                 </ListGroupItem>
               </ListGroup>
@@ -148,7 +148,7 @@ var Home = React.createClass({
             </Panel>
 
             <Panel header={<span>
-              <i className="fa fa-bar-chart-o fa-fw"></i> Donut Chart Example
+              <i className="fa fa-bar-chart-o fa-fw" /> Donut Chart Example
               </span>}
             >
               <div>

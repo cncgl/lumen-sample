@@ -1,8 +1,7 @@
-import React, { PropTypes, Component } from 'react';
+import React from 'react';
 import {Panel, Alert, Button, OverlayTrigger, Tooltip, Popover, Modal, PageHeader} from 'react-bootstrap';
 
 var Notifications = React.createClass({
-
 
   getInitialState: function() {
     return {
@@ -23,10 +22,8 @@ var Notifications = React.createClass({
   },
 
   render: function() {
-
     return (
       <div>
-
         <div className="row">
           <div className="col-lg-12">
             <PageHeader>Notifications</PageHeader>
@@ -34,7 +31,6 @@ var Notifications = React.createClass({
         </div>
 
         <div className="row">
-
             <div className="col-lg-6">
               <Panel header={<span>Alert Styles</span>} >
                 <Alert bsStyle="success">
@@ -105,44 +101,40 @@ var Notifications = React.createClass({
               <Panel header={<span>Tooltips and Popovers</span>} >
                 <h4>Tooltip Demo</h4>
                 <div>
-                  <OverlayTrigger placement="left" overlay=<Tooltip>Check this out!</Tooltip> >
+                  <OverlayTrigger placement="left" overlay={<Tooltip id="tooltip-1">Check this out!</Tooltip>} >
                     <Button>Tooltip on left</Button>
                   </OverlayTrigger>
-                  <OverlayTrigger placement="top" overlay=<Tooltip>Check this out!</Tooltip> >
+                  <OverlayTrigger placement="top" overlay={<Tooltip id="tooltip-2">Check this out!</Tooltip>} >
                     <Button>Tooltip on top</Button>
                   </OverlayTrigger>
-                  <OverlayTrigger placement="bottom" overlay=<Tooltip>Check this out!</Tooltip> >
+                  <OverlayTrigger placement="bottom" overlay={<Tooltip id="tooltip-3">Check this out!</Tooltip>} >
                     <Button>Tooltip on bottom</Button>
                   </OverlayTrigger>
-                  <OverlayTrigger placement="right" overlay=<Tooltip>Check this out!</Tooltip> >
+                  <OverlayTrigger placement="right" overlay={<Tooltip id="tooltip-4">Check this out!</Tooltip>} >
                     <Button>Tooltip on right</Button>
                   </OverlayTrigger>
                 </div>
                 <br />
                 <h4>Clickable Popover Demo</h4>
                 <div>
-                  <OverlayTrigger trigger="click" placement="left" overlay={<Popover title="Popover left"><strong>Hello!</strong> Check this info.</Popover>}>
+                  <OverlayTrigger trigger="click" placement="left" overlay={<Popover id="popover-1" title="Popover left"><strong>Hello!</strong> Check this info.</Popover>}>
                     <Button>Popover on left</Button>
                   </OverlayTrigger>
-                  <OverlayTrigger trigger="click" placement="top" overlay={<Popover title="Popover top"><strong>Hello!</strong> Check this info.</Popover>}>
+                  <OverlayTrigger trigger="click" placement="top" overlay={<Popover id="popover-2" title="Popover top"><strong>Hello!</strong> Check this info.</Popover>}>
                     <Button>Popover on top</Button>
                   </OverlayTrigger>
-                  <OverlayTrigger trigger="click" placement="bottom" overlay={<Popover title="Popover bottom"><strong>Hello!</strong> Check this info.</Popover>}>
+                  <OverlayTrigger trigger="click" placement="bottom" overlay={<Popover id="popover-3" title="Popover bottom"><strong>Hello!</strong> Check this info.</Popover>}>
                     <Button>Popover on bottom</Button>
                   </OverlayTrigger>
-                  <OverlayTrigger trigger="click" placement="right" overlay={<Popover title="Popover right"><strong>Hello!</strong> Check this info.</Popover>}>
+                  <OverlayTrigger trigger="click" placement="right" overlay={<Popover id="popover-4" title="Popover right"><strong>Hello!</strong> Check this info.</Popover>}>
                     <Button>Popover on right</Button>
                   </OverlayTrigger>
                 </div>
               </Panel>
             </div>
-            
           </div>
         </div>
-      
     );
-
-    
   },
 
   handleAlertDismiss: function(option) {
@@ -160,10 +152,7 @@ var Notifications = React.createClass({
         this.setState({alertVisibleD: false});
         break;
     };
-
-    
   }
-
 });
 
 export default Notifications;

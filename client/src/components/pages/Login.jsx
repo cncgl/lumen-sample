@@ -1,5 +1,5 @@
 import React from 'react';
-import Router from 'react-router';
+// import {Router, Route} from 'react-router';
 import {Panel, Input, Button} from 'react-bootstrap';
 import 'whatwg-fetch';
 
@@ -13,16 +13,16 @@ var LoginPage = React.createClass({
     };
   },
 
-  mixins: [Router.Navigation],
+  // mixins: [Router.Navigation],
+  contextTypes: {
+    router: React.PropTypes.object.isRequired
+  },
 
   render: function(){
-  
     return <div className="col-md-4 col-md-offset-4">
-
       <div className="text-center">
         <h1 className="login-brand-text">SB Admin React</h1>
       </div>
-
       <Panel header={<h3>Please Sign In</h3>} className="login-panel">
         <form role="form" onSubmit={this.handleLogin}>
           <fieldset>
@@ -42,21 +42,17 @@ var LoginPage = React.createClass({
   },
 
   setLoginID: function(e) {
-
     this.setState({
       loginID: e.target.value,
       loginError: ''
     });
-
   },
 
   setPassword: function(e) {
-
     this.setState({
       password: e.target.value,
       loginError: ''
     });
-
   },
 
   handleLogin: function(e){

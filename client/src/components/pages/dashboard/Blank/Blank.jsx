@@ -1,4 +1,4 @@
-import React, { PropTypes, Component } from 'react';
+import React from 'react';
 import {PageHeader} from 'react-bootstrap';
 
 var Blank = React.createClass({

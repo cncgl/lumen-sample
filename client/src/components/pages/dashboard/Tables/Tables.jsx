@@ -1,4 +1,4 @@
-import React, { PropTypes, Component } from 'react';
+import React from 'react';
 import {Pagination, Panel, Well, Button, PageHeader} from "react-bootstrap";
 
 var Tables = React.createClass({

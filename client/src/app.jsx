@@ -4,11 +4,13 @@
 
 // Polyfill
 
-import "babel-core/polyfill";
+// import "babel-core/polyfill";
+import "babel-polyfill";
 
 // Libraries
 import React from "react";
-import Router from "react-router";
+import ReactDOM from "react-dom";
+import { Router, browserHistory } from "react-router";
 
 
 // Base styling
@@ -16,15 +18,14 @@ import "./common/styles/app.less";
 
 // Routers
 import Routes from "./routers/Routes";
-
+// import createBrowserHistory from 'history/lib/createBrowserHistory';
 
 // ID of the DOM element to mount app on
 const DOM_APP_EL_ID = "app";
 
 // Initialize routes depending on session
-let routes;
-
-routes = Routes.getRoutes();
+let routes = Routes.getRoutes();
+// let history = createBrowserHistory();
 
 /**
  * Given a set of routes and params associated with the current active state,
@@ -73,6 +74,8 @@ let fetchData = function(routes, params) {
 }*/
 
 // Start the router
-Router.run(routes, function(Handler) {
-  React.render(<Handler />, document.getElementById(DOM_APP_EL_ID));
-});
+// Router.run(routes, function(Handler) {
+//   React.render(<Handler />, document.getElementById(DOM_APP_EL_ID));
+// });
+ReactDOM.render((<Router history={browserHistory} routes={routes} />),
+  document.getElementById(DOM_APP_EL_ID));

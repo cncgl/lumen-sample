@@ -183,7 +183,7 @@ var HomePage = React.createClass({
                   </li>
 
                   <li>
-                    <Link to="dashboard.home"><i className="fa fa-dashboard fa-fw" /> &nbsp;Dashboard</Link>
+                    <Link to="/home"><i className="fa fa-dashboard fa-fw" /> &nbsp;Dashboard</Link>
                   </li>
                         
                   <li className={classNames({'active': !this.state.chartsElementsCollapsed})}>
@@ -192,20 +192,20 @@ var HomePage = React.createClass({
                     </a>
                     <ul className={classNames({'nav nav-second-level': true, 'collapse': this.state.chartsElementsCollapsed})}>
                       <li>
-                        <Link to="dashboard.flot-charts">Flot Charts</Link>
+                        <Link to="/flot-charts">Flot Charts</Link>
                       </li>
                       <li>
-                        <Link to="dashboard.morrisjs-charts">Morris.js Charts</Link>
+                        <Link to="/morrisjs-charts">Morris.js Charts</Link>
                       </li>
                     </ul>
                   </li>
               
                   <li> 
-                    <Link to="dashboard.tables"><i className="fa fa-table fa-fw" /> &nbsp;Tables</Link>
+                    <Link to="/tables"><i className="fa fa-table fa-fw" /> &nbsp;Tables</Link>
                   </li> 
               
                   <li> 
-                    <Link to="dashboard.forms"><i className="fa fa-edit fa-fw" /> Forms</Link>
+                    <Link to="/forms"><i className="fa fa-edit fa-fw" /> Forms</Link>
                   </li>
                     
                   <li className={classNames({'active': !this.state.uiElementsCollapsed})}> 
@@ -213,22 +213,22 @@ var HomePage = React.createClass({
 
                     <ul className={classNames({'nav nav-second-level': true, 'collapse': this.state.uiElementsCollapsed})}>
                       <li>
-                        <Link to="dashboard.panels-wells">Panels and Wells</Link> 
+                        <Link to="/panels-wells">Panels and Wells</Link>
                       </li>
                       <li>
-                        <Link to="dashboard.buttons">Buttons</Link> 
+                        <Link to="/buttons">Buttons</Link>
                       </li>
                       <li>
-                        <Link to="dashboard.notifications">Notifications</Link>
+                        <Link to="/notifications">Notifications</Link>
                       </li>
                       <li>
-                        <Link to="dashboard.typography">Typography</Link> 
+                        <Link to="/typography">Typography</Link> 
                       </li>
                       <li>
-                        <Link to="dashboard.icons"> Icons</Link>
+                        <Link to="/icons"> Icons</Link>
                       </li>
                       <li>
-                        <Link to="dashboard.grid">Grid</Link>
+                        <Link to="/grid">Grid</Link>
                       </li>
                     </ul>
                   </li>
@@ -272,7 +272,7 @@ var HomePage = React.createClass({
                     </a> 
                     <ul className={classNames({'nav nav-second-level': true, 'collapse': this.state.samplePagesCollapsed})}>
                       <li>
-                        <Link to="dashboard.blank">Blank Page</Link>
+                        <Link to="/blank">Blank Page</Link>
                       </li>
                       <li>
                         <Link to="login">Login Page</Link>

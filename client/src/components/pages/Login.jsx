@@ -24,23 +24,17 @@ var LoginPage = React.createClass({
       </div>
       <Panel header={<h3>Please Sign In</h3>} className="login-panel">
         <form role="form" onSubmit={this.handleLogin}>
-          {/*<fieldset>*/}
-            {/*<div className="form-group">*/}
-            <FormGroup>
-              <FormControl onChange={this.setLoginID} className="form-control" placeholder="Email" ref="loginID" type="text" autofocus="" name="name" />
-            {/*</div>*/}
-            </FormGroup>
-            <FormGroup>
-            {/*<div className="form-group">*/}
-              <FormControl onChange={this.setPassword} className="form-control" placeholder="Password" ref="password" type="password" name="password" />
-            {/*</div>*/}
-            </FormGroup>
-            <FormGroup>
-              <Checkbox label="Remember Me" />
-            </FormGroup>
-            <Button type="submit" bsSize="large" bsStyle="success" block>Login</Button>
-            <p>{this.state.loginError}</p>
-          {/*</fieldset>*/}
+          <FormGroup>
+            <FormControl onChange={this.setLoginID} className="form-control" placeholder="Email" ref="loginID" type="text" autofocus="" name="name" />
+          </FormGroup>
+          <FormGroup>
+            <FormControl onChange={this.setPassword} className="form-control" placeholder="Password" ref="password" type="password" name="password" />
+          </FormGroup>
+          <FormGroup>
+            <Checkbox label="Remember Me" />
+          </FormGroup>
+          <Button type="submit" bsSize="large" bsStyle="success" block>Login</Button>
+          <p>{this.state.loginError}</p>
         </form>
       </Panel>
     </div>

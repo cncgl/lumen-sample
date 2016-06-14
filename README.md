@@ -33,6 +33,14 @@ $ ./artisan db:seed
 $ cd public
 $ php -S localhost:8080
 ```
+another terminal
+```
+$ cd client
+$ npm run build
+$ cd build
+$ ws -p 3000  # ws - npm i -g local-web-server
+```
+visit [http://localhost:3000](http://localhost:3000)
 
 ## License
 [MIT](LICENSE)

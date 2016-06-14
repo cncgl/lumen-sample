@@ -27,18 +27,18 @@ var Routes = React.createClass({
       return (
       <Route name="base" path="/" component={BaseLayout}>
         <Route name="dashboard" path="/dashboard" component={DashboardLayout}>
-          <Route name="dashboard.home" path="/home" component={DashboardHomePage} />
-          <Route name="dashboard.flot-charts" path="/flot-charts" component={DashboardFlotChartsPage} />
-          <Route name="dashboard.morrisjs-charts" path="/morrisjs-charts" component={DashboardMorrisjsChartsPage} />
-          <Route name="dashboard.tables" path="/tables" component={DashboardTablesPage} />
-          <Route name="dashboard.forms" path="/forms" component={DashboardFormsPage} />
-          <Route name="dashboard.panels-wells" path="/panels-wells" component={DashboardPanelsWellsPage} />
-          <Route name="dashboard.buttons" path="/buttons" component={DashboardButtonsPage} />
-          <Route name="dashboard.notifications" path="/notifications" component={DashboardNotificationsPage} />
-          <Route name="dashboard.typography" path="/typography" component={DashboardTypographyPage} />
-          <Route name="dashboard.icons" path="/icons" component={DashboardIconsPage} />
-          <Route name="dashboard.grid" path="/grid" component={DashboardGridPage} />
-          <Route name="dashboard.blank" path="/blank" component={DashboardBlankPage} />
+          <Route path="/home" component={DashboardHomePage} />
+          <Route path="/flot-charts" component={DashboardFlotChartsPage} />
+          <Route path="/morrisjs-charts" component={DashboardMorrisjsChartsPage} />
+          <Route path="/tables" component={DashboardTablesPage} />
+          <Route path="/forms" component={DashboardFormsPage} />
+          <Route path="/panels-wells" component={DashboardPanelsWellsPage} />
+          <Route path="/buttons" component={DashboardButtonsPage} />
+          <Route path="/notifications" component={DashboardNotificationsPage} />
+          <Route path="/typography" component={DashboardTypographyPage} />
+          <Route path="/icons" component={DashboardIconsPage} />
+          <Route path="/grid" component={DashboardGridPage} />
+          <Route path="/blank" component={DashboardBlankPage} />
           <IndexRoute name="dashboard.default" component={DashboardHomePage} />
         </Route>
         <Route name="login" path="/login" component={LoginPage} />
